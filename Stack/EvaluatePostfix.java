@@ -1,5 +1,5 @@
 import java.util.Stack;
-public class evaluatePostfix  {
+public class EvaluatePostfix  {
 
     public int evaluatePostfix(String[] arr) {
 
@@ -28,7 +28,7 @@ public class evaluatePostfix  {
                 }
             }
                 else{
-                    st.push(Integer.parseInt(s));
+                    st.push(Integer.valueOf(s));
                 }
         
         }
@@ -36,7 +36,7 @@ public class evaluatePostfix  {
     }
 
     public static void main(String[] args) {
-        evaluatePostfix ep=new evaluatePostfix();
+        EvaluatePostfix ep=new EvaluatePostfix();
         String[] arr={"2", "1", "+", "3", "*"};
         System.out.println(ep.evaluatePostfix(arr));
     }
